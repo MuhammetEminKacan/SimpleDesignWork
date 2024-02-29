@@ -31,7 +31,7 @@
     </androidx.appcompat.widget.Toolbar>
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/baslikTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -45,18 +45,18 @@
         app:layout_constraintTop_toBottomOf="@+id/toolbar" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/pizzaImage"
         android:layout_width="215dp"
         android:layout_height="263dp"
         android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/baslikTxt"
         app:srcCompat="@drawable/pizza" />
 
     <com.google.android.material.chip.Chip
-        android:id="@+id/chip"
+        android:id="@+id/peynirChipBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -64,14 +64,14 @@
         android:textColor="@color/yaziRenk"
         app:chipBackgroundColor="@color/anaRenk"
         app:chipStrokeColor="@color/anaRenk"
-        app:layout_constraintEnd_toStartOf="@+id/chip2"
+        app:layout_constraintEnd_toStartOf="@+id/sucukChipBtn"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/pizzaImage" />
 
     <com.google.android.material.chip.Chip
-        android:id="@+id/chip2"
+        android:id="@+id/sucukChipBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -79,13 +79,13 @@
         android:textColor="@color/yaziRenk"
         app:chipBackgroundColor="@color/anaRenk"
         app:chipStrokeColor="@color/anaRenk"
-        app:layout_constraintEnd_toStartOf="@+id/chip3"
+        app:layout_constraintEnd_toStartOf="@+id/zeytinChipBtn"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/chip"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintStart_toEndOf="@+id/peynirChipBtn"
+        app:layout_constraintTop_toBottomOf="@+id/pizzaImage" />
 
     <com.google.android.material.chip.Chip
-        android:id="@+id/chip3"
+        android:id="@+id/zeytinChipBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -93,13 +93,13 @@
         android:textColor="@color/yaziRenk"
         app:chipBackgroundColor="@color/anaRenk"
         app:chipStrokeColor="@color/anaRenk"
-        app:layout_constraintEnd_toStartOf="@+id/chip4"
+        app:layout_constraintEnd_toStartOf="@+id/biberChipBtn"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/chip2"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintStart_toEndOf="@+id/sucukChipBtn"
+        app:layout_constraintTop_toBottomOf="@+id/pizzaImage" />
 
     <com.google.android.material.chip.Chip
-        android:id="@+id/chip4"
+        android:id="@+id/biberChipBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -109,11 +109,11 @@
         app:chipStrokeColor="@color/anaRenk"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/chip3"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintStart_toEndOf="@+id/zeytinChipBtn"
+        app:layout_constraintTop_toBottomOf="@+id/pizzaImage" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/siparisSuresiTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -124,10 +124,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/chip2" />
+        app:layout_constraintTop_toBottomOf="@+id/sucukChipBtn" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/teslimatBaslikTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -135,12 +135,12 @@
         android:textColor="@color/anaRenk"
         android:textSize="22sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/textView2"
-        app:layout_constraintStart_toStartOf="@+id/textView2"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintEnd_toEndOf="@+id/siparisSuresiTxt"
+        app:layout_constraintStart_toStartOf="@+id/siparisSuresiTxt"
+        app:layout_constraintTop_toBottomOf="@+id/siparisSuresiTxt" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/aciklamaTxt"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -152,10 +152,10 @@
         android:textSize="22sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintTop_toBottomOf="@+id/teslimatBaslikTxt" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/fiyatTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -168,7 +168,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/sepeteEklemeBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="32dp"
